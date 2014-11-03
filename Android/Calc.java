@@ -3,7 +3,7 @@
 import android.os.Bundle; 
 import android.app.Activity; 
 import android.text.Editable; 
-mport android.view.Menu; 
+import android.view.Menu;
 import android.view.View; 
 import android.widget.Button; 
 import android.widget.EditText; 
