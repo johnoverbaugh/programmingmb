@@ -1,8 +1,8 @@
 // Variables for input
-// char readChar;                    // char buffer for input
+// char readChar;                 // char buffer for input
 const int NUMBER_OF_FIELDS = 2;   // how many comma-sep fields expected
-int fieldIndex = 0;              // the current field being received
-int values[NUMBER_OF_FIELDS];    // array to hold the values
+int fieldIndex = 0;               // the current field being received
+int values[NUMBER_OF_FIELDS];     // array to hold the values
 
 void setup() {
   Serial.begin(9600);
@@ -30,7 +30,6 @@ void loop() {
     {
       // yes, accumulate the value
       values[fieldIndex] = (values[fieldIndex] * 10) + (readChar - '0');
-      Serial.println(values[fieldIndex]);
     }
     // Or check if it's a comma
     else if (readChar == ',')
@@ -73,7 +72,6 @@ void loop() {
             Serial.print(values[1]);
             Serial.print(" is ");
             answer = doSubtraction(y, z);
-            Serial.println(answer);
             break;
           case 'x':
             Serial.print("The product of ");
